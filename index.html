@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="AJ Ashton">
+  <meta name="generator" content="pandoc">
+  <title>De-Clouding My Digital Data</title>
+  <link href="style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="header">
+  <h1 class="title">De-Clouding My Digital Data</h1>
+  <p class="subtitle">I’m on a mission to un-app and de-cloud my data. These are my notes on how it’s going.</p>
+  <p class="meta">Last update: Mon Sep  5 02:14:02 UTC 2016 — <a href='http://github.com/ajashton/decloud'>github.com/ajashton/decloud</a></p>
+</div>
+<nav class="toc"><ul>
+<li><a href="#intro">Intro</a><ul>
+<li><a href="#why">Why</a></li>
+<li><a href="#how">How</a></li>
+</ul></li>
+<li><a href="#stable-solutions">Stable Solutions</a><ul>
+<li><a href="#note-taking">Note taking</a></li>
+<li><a href="#to-do-list">To-Do List</a></li>
+<li><a href="#email">Email</a></li>
+</ul></li>
+<li><a href="#in-progress">In Progress</a><ul>
+<li><a href="#passwords">Passwords</a></li>
+<li><a href="#music">Music</a></li>
+<li><a href="#general-file-syncing">General File Syncing</a></li>
+</ul></li>
+<li><a href="#needs-a-solution">Needs A Solution</a><ul>
+<li><a href="#address-book">Address Book</a></li>
+<li><a href="#read-later-article-archive">Read Later / Article Archive</a></li>
+</ul></li>
+<li><a href="#blue-sky">Blue Sky</a><ul>
+<li><a href="#feed-reader">Feed Reader</a></li>
+<li><a href="#podcasts">Podcasts</a></li>
+<li><a href="#photos">Photos</a></li>
+<li><a href="#web-bookmarks">Web Bookmarks</a></li>
+</ul></li>
+</ul></nav>
+<div class="main">
+<h2 id="intro">Intro</h2>
+<h3 id="why">Why</h3>
+<p>Many apps that touch your data these days try to be all-in-one solutions. You create the content using the Official™ App, it keeps your data on the Official™ Servers, and you only access and manage it from there using either the Official™ App or Official™ Website. In some cases there’s an Official™ API you can use to upload and maybe even download your data using a third-party program. Examples: Evernote, LastPass, Pocket, Google Photos, etc.</p>
+<p>The problem with putting all my stuff into apps and clouds is that these tend to <a href="https://ourincrediblejourney.tumblr.com/">go away unexpectedly</a>. Another problem for me is that these apps tend to have poor or non-existent Linux support.</p>
+<p>Since it’s such a hot topic these days I should note: privacy is not a primary motivation for this effort. I’m not too worried about companies spying on me or what they’re doing with my data. I just want my data to be resilient, portable, and compatible.</p>
+<h3 id="how">How</h3>
+<ul>
+<li>Prefer flat files as primary storage (avoid too much reliance on databases and complicated management services, especially ones I can’t control)</li>
+<li>Prefer common, time-tested data formats</li>
+<li>Use generic, swappable file syncing solutions</li>
+<li>Use open-source apps to edit &amp; manage the files</li>
+</ul>
+<p>For any solution to be useful to me, both Linux and Android support are must-have. Bonus points for apps that are open-source, particularly for Android apps available via F-Droid.</p>
+<p>I also consider Mac OS and iOS support important, but since I don’t use those every day I’m happy to accept untested “theoretical” support for them in most cases. For posterity theoretical Windows support is also nice but I don’t see myself needing or wanting to test that any time soon.</p>
+<h2 id="stable-solutions">Stable Solutions</h2>
+<p>These are systems I’ve been using for a while and are as “feature-complete” as I need them to be.</p>
+<h3 id="note-taking">Note taking</h3>
+<p>I keep a lot of notes and have tried all kinds of different systems: Linux desktop go-tos like KJots &amp; TomBoy, mainstream classics like Evernote &amp; OneNote, and more unique tools like Workflowy and Google Keep. The one I proably used most was Evernote, until about 16 months ago when I just exported it all to plain text. (This was easy since I don’t use many photos/screenshots/scans in my note-taking.)</p>
+<p><strong>Format:</strong> Plain text / Markdown</p>
+<p><strong>Sync:</strong> Syncthing</p>
+<p><strong>Apps:</strong> <a href="http://www.qownnotes.org/">QOwnNotes</a> (Linux, QT), <a href="https://burnsoftware.wordpress.com/p-s-notes/">P.S. Notes</a> (Linux, GTK), <a href="https://2appstudio.com/jotterpad/">JotterPad</a> (Android)</p>
+<h3 id="to-do-list">To-Do List</h3>
+<p>I’ve used Google Tasks, Wunderlist, Remember the Milk, TaskWarrior, the todo features in Evolution and KMail, and a whole bunch of other things. I don’t need fancy features, just a place to keep &amp; prioritize my immediate to-dos. (Longer-term tasks stay in project notes or GitHub issue trackers.)</p>
+<p>My to-dos are pretty ephemeral so this one isn’t so much about data longevity/resilience, just simplicity and compatibility across lots of apps &amp; platforms.</p>
+<p><strong>Format:</strong> <a href="http://todotxt.com/">Todo.txt</a>. The simple system of contexts and projects works well for me and there are loads of compatible clients on all platforms. And of course the todo list is stored as a single plaintext file that I can easily read &amp; edit manually if needed.</p>
+<p><strong>Sync:</strong> Syncthing. I keep the Todo.txt and Done.txt files in a subdirectory of my main markdown notes folder.</p>
+<p><strong>Apps:</strong> <a href="http://manuel-kehl.de/projects/go-for-it/">Go For It!</a> (Linux, GTK), <a href="https://f-droid.org/repository/browse/?fdid=nl.mpcjanssen.simpletask">SimpleTask Cloudless</a> (Android), <a href="https://extensions.gnome.org/extension/570/todotxt/">Todo.txt GNOME Shell Extension</a></p>
+<h3 id="email">Email</h3>
+<p>Like a lot of people I’ve been using Gmail since it’s 2004 debut. Woes:</p>
+<ul>
+<li>weird/ugly IMAP issues, Google increasingly focusing on custom APIs over open protocols</li>
+<li>requires special support from 3rd-party clients to work well</li>
+<li>overly aggressive spam filter (I was missing <em>a lot</em> of legitimate mailing list threads)</li>
+<li>inefficent and annoying web UI</li>
+</ul>
+<p>I still need to rely on a third-party service for email since I have no desire to run my own mail server. I chose FastMail because it’s been around a long time and everyone who uses it seems to have nice things to say about it. Their 30 day free trial completely sold me and I pre-paid for 3 years, which came to $100 for their standard plan.</p>
+<p>Migrating 12 years of email from Google to FastMail was surprisingly painless (there’s basically a 1-click button to do it). Migrating all my friends/family/accounts off of my Gmail <em>address</em> of 12 years is a much harder task that I’ve barely made a dent in so far. I probably won’t ever be able to turn off auto-forwarding from my old GMail address, but that’s fine. I still need a Google account for certain things anyway.</p>
+<p><strong>Sync:</strong> FastMail, IMAP</p>
+<p><strong>Apps:</strong> FastMail Web &amp; Android clients, Pantheon Mail (Linux, GTK), Boxer (Android)</p>
+<h2 id="in-progress">In Progress</h2>
+<p>These are systems that I’m using but aren’t fully complete or tested yet. I still partially rely on proprietary cloud systems for some of them.</p>
+<h3 id="passwords">Passwords</h3>
+<p>My inital app/cloud solution was LastPass. I was using this vs other options like 1Password mainly because it’s one of the few mainstream password managers that supports Linux, Mac OS, and Android. I used KeePassX for a while, but the few available clients all had clunky dated interfaces and that were difficult to use.</p>
+<p>The solution I’ve settled on for now is <a href="https://www.passwordstore.org/">pass</a> (“the standard unix password manager”) with files synced in git. The basic idea is you have a folder full of GPG-encrypted plaintext files, 1 per password. The first line of the file is the password, and any additional lines are optional arbitrary notes. (I usually add <code>login: &lt;username&gt;</code> and <code>url: &lt;website&gt;</code> where applicable.)</p>
+<p>I have a custom bash script that gives me a <a href="https://davedavenport.github.io/rofi/">rofi</a> interface to my passwords with a global <code>Cmd-P</code> shortcut.</p>
+<p><strong>Sync:</strong> Git, GitHub</p>
+<p><strong>Apps:</strong> <a href="https://www.passwordstore.org/">pass</a> (CLI), <a href="https://f-droid.org/repository/browse/?fdid=com.zeapo.pwdstore">Android App?</a></p>
+<p><strong>To-do:</strong> This is still “in progress” because I don’t have an Android solution totally worked out yet. There is a pass-compatible apps available but I haven’t been able to get one properly set up yet (the encryption via GPG key makes this a little complicated).</p>
+<h3 id="music">Music</h3>
+<p>I have a collection of MP3 ang OGG files I’ve been growing since high school (mostly legit CD rips &amp; digital purchases). My playlists are simple M3U files, which are essentially just plaintext newline-delimited lists of relative file paths. Everything is organized in a particular way I like hand have been using for years. (Excuse me while I reminisce about the days when I had a 5th-gen iPod running <a href="http://www.rockbox.org/">Rockbox</a>… editing playlists on-device, custom skins, no need for iTunes! It was glorious. Look at <a href="http://download.rockbox.org/daily/manual/rockbox-ipodvideo/rockbox-buildch12.html">this list of plugins</a> - there’s <em>Doom and a Gameboy emulator</em>.)</p>
+<p><strong>Formats:</strong> MP3 &amp; OGG audio, M3U playlists, JPG &amp; PNG album art</p>
+<p><strong>Sync:</strong> None yet. I keep a primary copy of my music library on a 128GB SD card that I can plug into whatever computer I’m working on. It’s backed up, but not regularly or automatically yet.</p>
+<p><strong>Apps:</strong> <a href="https://www.musicpd.org/">MPD</a>, <a href="https://github.com/cdrummond/cantata">Cantata</a> (Sidenote: mpd is extremely graceful about handling a music library on a drive that is being constantly un- and re-mounted. I can pause, unplug the SD card, close my laptop, plug the SD card in the next day, and resume playing the paused track.)</p>
+<p><strong>To-do:</strong> I don’t have a good way to selectively sync &amp; play certain tracks and playlists on my phone. I do have a Spotify subscription, and I probably won’t get rid of it any time soon since I think Spotify is great simply as a music discovery service. Maybe all I need is something to convert and synchronize my M3U playlists to Spotify playlists?</p>
+<h3 id="general-file-syncing">General File Syncing</h3>
+<p>I used to use Dropbox for everything. I’ve moved a lot over to Syncthing which has some pros and cons compared to Dropbox.</p>
+<p>Pros: Synced folders can be anywhere, not just subfolders. No central server: private data never has to leave your control.</p>
+<p>Cons: More complicated to understand &amp; set up. No central server: multiple machines must be online in order to sync. Sync can be slow to initiate, especially when not on the same LAN.</p>
+<p><strong>To-do:</strong> I’d like to check out <a href="https://www.sparkleshare.org/">SparkleShare</a> for syncing plain text files. <a href="https://librevault.com/">Librevault</a> could also be interesting.</p>
+<h2 id="needs-a-solution">Needs A Solution</h2>
+<p>These are problem areas that I want to address soon but have made little/no progress on so far.</p>
+<h3 id="address-book">Address Book</h3>
+<p>No idea what to do here. Right now it’s all in Google.</p>
+<h3 id="read-later-article-archive">Read Later / Article Archive</h3>
+<p>I used to use Instapaper. Somewhere along the line I switched to Pocket (I don’t recall what prompted the switch). I’m not sure the best way to take control of this yet.</p>
+<p>I put articles in Pocket for at least 1 of 3 reasons:</p>
+<ul>
+<li>I want to read the article immediately, but I need it to be more readable (poor formatting / font choice on the original site)</li>
+<li>I want to read the article later, possibly offline on a different device</li>
+<li>I have already read the article and I want to save it for future reference</li>
+</ul>
+<p>The challenge is that I only want the unread articles to be available offline on my mobile devices (due to space constraints), but I’d still like to be able to access the full archive if I’m online.</p>
+<p><a href="https://www.wallabag.org/">Wallabag</a> is an open-source alternative, but a little more complicated than I’d like. Maybe just something that extracts the main content from a webpage into an ePub or similar that I can sync?</p>
+<h2 id="blue-sky">Blue Sky</h2>
+<p>These are areas that would be possibly be nice to have more direct control over, but I’m happy with current cloud/app solutions and am not too concerned about losing critical data or being unable to easily migrate to different services.</p>
+<h3 id="feed-reader">Feed Reader</h3>
+<p>I used to use Google Reader. I was horrified when it went away. Now I use Feedly to keep up with my RSS feeds. In fact, I like it so much I support them with a Feedly Pro subscription.</p>
+<p>One concern I have about Feedly (apart from the general “it’s a cloud service that could go away”) is that it has no support for mobile browsing without using their official Android or iOS clients. I noticed this when I was testing out Ubuntu Touch - visiting the Feedly website all I got was a link to the Google Play store, which of course was useless and frustrating.</p>
+<h3 id="podcasts">Podcasts</h3>
+<p>I use PocketCasts on my phone. I don’t really need things synced across devices, and if I want to switch apps in the future I can just export &amp; import a OPML file. Losing the listened/unlistened for each episode would be a minor annoyance.</p>
+<p>Of course if there’s a really great open-source / flat-file solution out there I’ll definitely look into it.</p>
+<h3 id="photos">Photos</h3>
+<p>My photo library is split into 2 pieces: photos taken from mobile devices live in Google Photos, and photos taken from my SLR are in a manually-managed directory structure on a USB drive.</p>
+<p>The SLR photos are organized by date and event/location, with the RAW/JPG names unchanged from what they were in the camera. Eg <code>2014/07-16 Camping/IMG_1234.crw</code>.</p>
+<p>I have no particular way of browsing my SLR photos or doing any kind of content tagging. I don’t take photos much these days so it’s not a priority for me.</p>
+<h3 id="web-bookmarks">Web Bookmarks</h3>
+<p>Web searching is so good these days I don’t usually bother bookmarking sites. But I do keep a collection of links in <a href="https://pinboard.in/">Pinboard</a>. Because of the simplicity and history of the service, I’m not too concerned about it going away unexpectedly or being a pain to migrate away from.</p>
+</div>
+</body>
+</html>

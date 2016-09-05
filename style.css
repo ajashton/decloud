@@ -1,0 +1,111 @@
+/* vim: set sw=2 sts=2: */
+@import 'https://fonts.googleapis.com/css?family=Catamaran:300,300i,500,800|Space+Mono';
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  color: #222;
+  font: 300 16px/25px Catamaran, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #46a;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+b, strong { font-weight: 500; }
+code {
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font: normal 14px/25px 'Space Mono', monospace;
+  padding: 0 4px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  margin: 25px 0;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-top: 75px;
+  text-align: center;
+}
+h2 {
+  border-top: 2px solid #ccc;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 50px;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+h3 {
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.header, .toc, .main {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 0px 20px;
+}
+.subtitle {
+  font-style: italic;
+  text-align: center;
+}
+
+.toc {
+  font-size: 14px;
+  font-weight: 500;
+}
+.toc ul, .toc li { clear: both; }
+.toc ul:after, .toc li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.toc > ul {
+  text-align: right;
+  text-transform: uppercase;
+}
+.toc ul ul {
+  float: right;
+  width: 50%;
+  text-align: left;
+  text-transform: none;
+}
+.toc ul li a { padding: 0 10px; }
+
+.main {
+  margin-bottom: 100px;
+}
+.main p {
+  margin: 25px 0;
+}
+.main ul {
+  margin-left: 25px;
+}
+.main ul li:before {
+  content: "•";
+  display: inline-block;
+  margin-left: -10px;
+  width: 10px;
+}
+.meta {
+  color: #678;
+  font-size: 14px;
+  margin: 20px 0;
+  text-align: center;
+}
