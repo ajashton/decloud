@@ -97,7 +97,7 @@ I have a collection of MP3 ang OGG files I've been growing since high school (mo
 
 **Formats:** MP3 & OGG audio, M3U playlists, JPG & PNG album art
 
-**Sync:** None yet. I keep a primary copy of my music library on a 128GB SD card that I can plug into whatever computer I'm working on. It’s backed up, but not regularly or automatically yet.
+**Sync:** I keep a primary copy of my music library on a 128GB SD card that I can plug into whatever computer I'm working on. It’s also synced with Syncthing to a home server.
 
 **Apps:** [MPD](https://www.musicpd.org/), [Cantata](https://github.com/cdrummond/cantata) (Sidenote: mpd is extremely graceful about handling a music library on a drive that is being constantly un- and re-mounted. I can pause, unplug the SD card, close my laptop, plug the SD card in the next day, and resume playing the paused track.)
 
@@ -107,7 +107,7 @@ I have a collection of MP3 ang OGG files I've been growing since high school (mo
 
 I used to use Dropbox for everything. I've moved a lot over to Syncthing which has some pros and cons compared to Dropbox.
 
-Pros: Synced folders can be anywhere, not just subfolders. No central server: private data never has to leave your control.
+Pros: Synced folders can be anywhere, not just subfolders. Even removeable drives and SD cards work - Syncthing will sync them when they're plugged in and not freak out when they're not. No central server: private data never has to leave your control.
 
 Cons: More complicated to understand & set up. No central server: multiple machines must be online in order to sync. Sync can be slow to initiate, especially when not on the same LAN.
 
